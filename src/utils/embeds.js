@@ -69,10 +69,10 @@ function createSetupButtons() {
 function createInterfaceEmbed() {
   return new EmbedBuilder()
     .setColor('#5865F2') // Discord blurple color
-    .setTitle('🎮 TempVoice Control Panel')
-    .setDescription('Welcome to your voice channel control panel! Use the buttons below to customize your temporary voice channel experience.')
+    .setTitle('🎮 Noobs City Panel')
+    .setDescription('Bienvenido a tu panel de control! Utiliza los botones de abajo para personalizar tu experiencia en el canal de voz temporal.')
     .setTimestamp()
-    .setFooter({ text: 'Click the buttons below to manage your voice channel', iconURL: 'https://i.imgur.com/AfFp7pu.png' });
+    .setFooter({ text: 'Presione los botones de abajo para configurar tu canal de voz'});
 }
 
 // Interface buttons
@@ -80,48 +80,48 @@ function createInterfaceButtons() {
   // Row 1 - Channel Management
   const nameButton = new ButtonBuilder()
     .setCustomId('voice_name')
-    .setStyle(ButtonStyle.Primary)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('✏️');
 
   const limitButton = new ButtonBuilder()
     .setCustomId('voice_limit')
-    .setStyle(ButtonStyle.Primary)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('👥');
 
   const privacyButton = new ButtonBuilder()
     .setCustomId('voice_privacy')
-    .setStyle(ButtonStyle.Primary)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('🔐');
 
   const waitingRoomButton = new ButtonBuilder()
     .setCustomId('voice_waiting')
-    .setStyle(ButtonStyle.Primary)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('⏳');
 
   const threadButton = new ButtonBuilder()
     .setCustomId('voice_thread')
-    .setStyle(ButtonStyle.Primary)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('💬');
 
   // Row 2 - User Management
   const trustButton = new ButtonBuilder()
     .setCustomId('voice_trust')
-    .setStyle(ButtonStyle.Success)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('✅');
 
   const untrustButton = new ButtonBuilder()
     .setCustomId('voice_untrust')
-    .setStyle(ButtonStyle.Success)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('❌');
 
   const inviteButton = new ButtonBuilder()
     .setCustomId('voice_invite')
-    .setStyle(ButtonStyle.Success)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('📩');
 
   const kickButton = new ButtonBuilder()
     .setCustomId('voice_kick')
-    .setStyle(ButtonStyle.Danger)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('🚪');
 
   const regionButton = new ButtonBuilder()
@@ -132,12 +132,12 @@ function createInterfaceButtons() {
   // Row 3 - Advanced Controls
   const blockButton = new ButtonBuilder()
     .setCustomId('voice_block')
-    .setStyle(ButtonStyle.Danger)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('🚫');
 
   const unblockButton = new ButtonBuilder()
     .setCustomId('voice_unblock')
-    .setStyle(ButtonStyle.Success)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('🔓');
 
   const claimButton = new ButtonBuilder()
@@ -152,7 +152,7 @@ function createInterfaceButtons() {
 
   const deleteButton = new ButtonBuilder()
     .setCustomId('voice_delete')
-    .setStyle(ButtonStyle.Danger)
+    .setStyle(ButtonStyle.Secondary)
     .setEmoji('🗑️');
 
   const row1 = new ActionRowBuilder().addComponents(nameButton, limitButton, privacyButton, waitingRoomButton, threadButton);
