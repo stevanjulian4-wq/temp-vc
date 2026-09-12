@@ -72,7 +72,7 @@ function createInterfaceEmbed() {
     .setTitle('🎮 Noobs City Panel')
     .setDescription('Bienvenido a tu panel de control! Utiliza los botones de abajo para personalizar tu experiencia en el canal de voz temporal.')
     .setTimestamp()
-    .setFooter({ text: 'Presione los botones de abajo para configurar tu canal de voz'});
+    .setFooter({ text: 'Presione los botones de abajo para configurar tu canal de voz' iconURL: 'https://www.photopea.com/g/GTCmGQsu' });
 }
 
 // Interface buttons
